@@ -1,0 +1,38 @@
+.img{
+    margin: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 3px solid #e96565;
+    }
+}
+.img2{
+    display: none;
+}
+.story{
+        border-bottom: 1px solid #ccc;
+}
+
+@media (min-width:768px){
+    .storyIma{
+        display: flex;
+    }
+    .img2{
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            border: 3px solid #e96565;
+        
+        }
+    }
+    
+}
