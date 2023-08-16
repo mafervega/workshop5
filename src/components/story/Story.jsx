@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Swal from "sweetalert2";
+import { useNavigate } from 'react-router-dom';
 import './style.scss'
 
 const Story = () => {
@@ -8,7 +9,7 @@ const Story = () => {
   const [visibleUsers, setVisibleUsers] = useState(5);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/users')
+    axios.get('http://localhost:3000/Users')
       .then(response => {
         setUsers(response.data);
       })
@@ -39,6 +40,8 @@ const Story = () => {
       icon: "info",
     });
   };
+  const navigate = useNavigate ()
+
 
   return (
     <div className='story'>
@@ -46,7 +49,7 @@ const Story = () => {
         {users.slice(0, visibleUsers).map(user => ( 
           <div className='mafer' key={user.id} onClick={() => story(user.username)}>
             <img src={user.profileImage} alt="" />
-            <span>{user.username}</span>
+            <span onClick={ ()=> {navigate(`/${user.id}`)}} >{user.username} </span>
           </div>
         ))}
       </div>
