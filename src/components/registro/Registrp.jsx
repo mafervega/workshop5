@@ -73,7 +73,7 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-          <label htmlFor="password">Nueva guario:</label>
+          <label htmlFor="password">Nueva Usuario:</label>
         <input
           type="text"
           id="username"
