@@ -1,65 +1,91 @@
+
 .posts{
-    margin: 2.5rem;     
-    .infoUser{
-        margin: 1rem;
-        display: flex;
+    margin: 1rem;
+        .info{
+        width: 100%;
+        margin-bottom: 1rem;
         
-        img{
-            width: 50px;
-            height: 50px;
-            border-radius: 100px;
-            margin-right: 1rem;
+        .infoUser{
+            display: flex;
+            border-radius: 1rem ;
+            border-top:2px solid #ccc;
+            background-color: #fff;
+            h3{
+                background-color: #fff;
+
+            }
+            img{
+
+                width: 50px;
+                height: 50px;
+                border-radius: 100px;
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
         }
-    }
-    .img{
-        margin-top: 1rem;
-        img{
-            width: 100%;
+        .img{ 
+            background-color: #fff;
+            display: flex;
+            justify-content: center;   
+            img{
+                width: 80%;
+                border-radius: 1rem;
+            }  
+        }
+        .iconos{
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
             border-radius: 1rem;
-        }  
-    }
-    .iconos{
-        display: flex;
-        justify-content: space-between;
-        border-radius: 2px solid #ccc;
-        border-bottom: 2px solid #ccc;
-        .interacion{
-            .heart{
-                margin: 0.5rem;
+            border-bottom: 2px solid #ccc;
+            .interacion{
+                background-color: #fff;
+
+                border-radius: 1rem;
+                .heart{
+                    background-color: #fff;
+
+                    margin: 0.5rem;
+                }
+                .chat{
+                    background-color: #fff;
+                    margin: 0.5rem;
+                }
+                .envio{
+                    background-color: #fff;
+                    margin: 0.5rem;
+                }
             }
-            .chat{
-                margin: 0.5rem;
-            }
-            .envio{
-                margin: 0.5rem;
+            .guardado{
+                margin: 0.4rem;
+                color: #ff7674;
             }
         }
-        .guardado{
-            margin: 0.4rem;
-        }
     }
+    
 }
 @media (min-width:768px){
     .posts{
-        width: 97%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .infoUser{
-        display: flex;
-        h3{
-            font-size: x-large;
+        .info{
+            width: 80%;
+            .infoUser{
+                h3{
+                    font-size: x-large;
+                }
+            }
+            .img{ 
+                display: flex;
+                justify-content: center;   
+                img{
+                    width: 80%;
+                }
+            }
         }
-        }
-    .img{ 
-        display: flex;
-        align-items: center;
-        justify-content: center;   
         
-        img{
-            width: 100%;
-        }
-    }
 }
 }
